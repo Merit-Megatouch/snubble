@@ -1,0 +1,53 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+LinkIntoList(ListObj*, void*, int) | snubble.so
+IsInList(ListObj*, void*) | snubble.so
+QueFlush(bool) | snubble.so
+ClearList(ListObj**, unsigned char) | snubble.so
+WorldClass::AllocSprite(Bitmap*, unsigned short) | snubble.so
+WorldClass::ClearScreen() | snubble.so
+WorldClass::WaitOnFrame(unsigned long, bool) | snubble.so
+WorldClass::AssignString(SObj*, char const*, int, int, int, BmpFont*, unsigned short, unsigned short, int, signed char, short, short, short, unsigned char, unsigned char) | snubble.so
+WorldClass::AssignString1(SObj*, char const*, int*, int, int, int, BmpFont*, unsigned short, unsigned short, int, signed char, short, short, short, unsigned char, unsigned char) | snubble.so
+WorldClass::DeleteSpriteAllLists(SObj*, unsigned char) | snubble.so
+WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | snubble.so
+WorldClass::SetBack(char const*, int) | snubble.so
+WorldClass::ShowAll() | snubble.so
+WorldClass::NextFrame(unsigned char, unsigned char, bool, bool, bool, bool) | snubble.so
+WorldClass::WorldClass() | snubble.so
+List::UnLinkAndAdvance() | snubble.so
+List::Advance(int) | snubble.so
+List::SetList(ListObj*) | snubble.so
+List::List(ListObj*) | snubble.so
+List::List(List*) | snubble.so
+List::~List() | snubble.so
+SObj::MoveSprite(int, int, int, int, int, int, int, int, unsigned char) | snubble.so
+SObj::CurveSprite(int, int, int, int, int, int, int, int, int, int, int, int, int, int, unsigned char) | snubble.so
+SObj::DebugSprite() | snubble.so
+SObj::DoNextFrame() | snubble.so
+SObj::LoopAllAnim(Bitmap*, int, unsigned char, int) | snubble.so
+SObj::LoopObjAnim(Bitmap*, int, int, int, int, int, unsigned char) | snubble.so
+SObj::StripEvents(int) | snubble.so
+SObj::LoopRestAnim(unsigned char) | snubble.so
+SObj::DeleteAfterLast(int, unsigned char) | snubble.so
+SObj::LoopObjAnimAfterLast(Bitmap*, int, int, int, int, int, unsigned char) | snubble.so
+SObj::DoDraw() | snubble.so
+SObj::CurveNum(unsigned char*, unsigned char, unsigned char, unsigned char, unsigned char, int, int, unsigned char) | snubble.so
+SObj::PlaySound(char*, unsigned short, unsigned long) | snubble.so
+SObj::SetBmpSeq(Bitmap*) | snubble.so
+SObj::SObj(Bitmap*, unsigned short) | snubble.so
+SObj::~SObj() | snubble.so
+Bitmap::CreateSmackTextBox(char const*, FontBase*, signed char, unsigned short, unsigned short, bool) | snubble.so
+Bitmap::CreateColoredTextBoxTTFS(char const*, int, int, int, int, int, int, int, int, int, bool, char*, int) | snubble.so
+Bitmap::DisplayZ(int, int, int, unsigned char) | snubble.so
+Bitmap::NextAnim() | snubble.so
+Sprite::SpriteClick() | snubble.so
+Sprite::Reset() | snubble.so
+Sprite::Signal(Group::SpriteSignalType) | snubble.so
+Sprite::Signal(SpriteSignal*) | snubble.so
+Sprite::Message(Group::SpriteSignalType) | snubble.so
+Sprite::Message(SpriteSignal*) | snubble.so
+Sprite::DoCommand(int) | snubble.so
+typeinfo for SObj | snubble.so
